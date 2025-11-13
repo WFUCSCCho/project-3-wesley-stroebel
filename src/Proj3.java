@@ -1,7 +1,7 @@
 //**********************************************************************
 // @file: Proj3.java
 // @description: Main class that will implement different sorting alogorithms
-//               and capre the times it takes for them to be completes for different lists
+//               and compare the times it takes for them to be completes for different lists
 // @author: Wesley Stroebel
 // @date: November 12, 2025
 // **********************************************************************
@@ -193,10 +193,7 @@ public class Proj3 {
         int n = Integer.parseInt(args[2]);
 
         ArrayList<InsuranceRecord> original = readDataset(fileName, n);
-        if (original.size() == 0) {
-            System.out.println("No data read from file.");
-            return;
-        }
+
 
         ArrayList<InsuranceRecord> sorted = new ArrayList<>(original);
         Collections.sort(sorted);
